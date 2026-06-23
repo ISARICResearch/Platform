@@ -9,10 +9,10 @@
 
 
 [project]
-name = "PlatformDocs"
+name = "Platform"
 version = "v1.0"
 
-description = "Integration documentation for the ISARIC Clinical Epidemiology Platform."
+description = "Central documentation site for the ISARIC Clinical Epidemiology Platform."
 
 authors = [
     { name = "ISARIC Data Team", email = "data@isaric.org" },
@@ -52,5 +52,3 @@ dependencies = [
     "nb2plots",
     "jupyter-sphinx"
 ]
-
-[project.optional-dependencies]
