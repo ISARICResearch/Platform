@@ -14,7 +14,7 @@ Requests for pages with the ISARIC domain URLs are forwarded to RTD (using an ap
 
 All dependencies are documentation dependencies, principally [Sphinx](https://www.sphinx-doc.org/). They are defined in the ``dependencies`` variable of the project TOML.
 
-[Astral UV](https://docs.astral.sh/uv/) is recommended package manager. This can be installed in different ways, but the simplest is via `pip`:
+[Astral UV](https://docs.astral.sh/uv/) is the recommended package manager. This can be installed in different ways, but the simplest is via `pip`:
 ```shell
 python -m pip install uv
 ```
