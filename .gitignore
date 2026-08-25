@@ -217,5 +217,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# MacOS DSStore files
+.DS_Store
+
 # Sphinx files and/or folders to ignore
 _build/
