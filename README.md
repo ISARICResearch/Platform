@@ -20,7 +20,7 @@ python -m pip install uv
 ```
 By default UV installs and manages all dependencies in a new `.venv` subfolder in the working directory - if a pre-existing environment is preferred specify its path via the `UV_PROJECT_ENVIRONMENT` environment variable before running UV commands. To install (or sync) all the project dependencies via the project TOML run the following command:
 ```shell
-uv sync --verbose --all-groups --all-extras --no-project-install --no-cache -refresh --inexact
+uv sync --verbose --all-groups --all-extras --no-project-install --no-cache --refresh --inexact
 ```
 This will usually update the `uv.lock` file: if so, the file should be staged and committed in the normal way.
 
