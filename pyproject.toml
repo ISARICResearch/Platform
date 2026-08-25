@@ -41,14 +41,5 @@ requires-python = ">=3.12"
 # No pinning required for the moment, but this could change.
 dependencies = [
     "Sphinx",
-    "sphinx-autobuild",
-    "sphinx-copybutton",
-    "sphinx-gallery",
-    "sphinx-design",
-    "myst-parser",
-    "pylint",
     "furo",
-    "numpydoc",
-    "nb2plots",
-    "jupyter-sphinx"
 ]
