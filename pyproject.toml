@@ -9,18 +9,18 @@
 
 
 [project]
-name = "PlatformDocs"
-version = "v1.0"
+name = "Platform"
+version = "v0.1.0"
 
-description = "Integration documentation for the ISARIC Clinical Epidemiology Platform."
+description = "Central documentation site for the ISARIC Clinical Epidemiology Platform."
 
 authors = [
-    { name = "ISARIC Data Team", email = "data@isaric.org" },
+    { name = "ISARIC Development Team", email = "isaric-dev@ndm.ox.ac.uk" },
     { name = "Sandeep Murthy", email = "sandeep.murthy@ndm.ox.ac.uk" }
 ]
 
 maintainers = [
-    { name = "ISARIC Data Team", email = "data@isaric.org" },
+    { name = "ISARIC Development Team", email = "isaric-dev@ndm.ox.ac.uk" },
     { name = "Sandeep Murthy", email = "sandeep.murthy@ndm.ox.ac.uk" },
 ]
 
@@ -41,16 +41,6 @@ requires-python = ">=3.12"
 # No pinning required for the moment, but this could change.
 dependencies = [
     "Sphinx",
-    "sphinx-autobuild",
-    "sphinx-copybutton",
-    "sphinx-gallery",
-    "sphinx-design",
     "myst-parser",
-    "pylint",
     "furo",
-    "numpydoc",
-    "nb2plots",
-    "jupyter-sphinx"
 ]
-
-[project.optional-dependencies]

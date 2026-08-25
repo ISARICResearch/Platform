@@ -1,37 +1,33 @@
 # ISARIC Clinical Epidemiology Platform Documentation
 
-This is an integrated documentation repository for the ISARIC Clinical Epidemiology Platform, containing all source content and assets required to build and deploy platform documentation, principally to a Read the Docs (RTD) site (community edition).
+This is the repository for the ISARIC Clinical Epidemiology Platform documentation site:
+
+https://docs.isaric.org
+
+It contains all source content and assets required to build and deploy the documentation, via a Read the Docs (RTD) site:
+
+https://isaricplatform.readthedocs.io
+
+Requests for pages with the ISARIC domain URLs are forwarded to RTD (using an appropriate method). The RTD build configuration YML is `.readthedocs.yaml`.
 
 ## Project TOML & Dependencies
 
-No build system metadata is required in this TOML as no packages or other artifacts will be produced. The TOML only serves as a place to define docs dependencies for the repo package manager, which is Astral UV. The project version attribute is simply a placeholder to allow the TOML to be processes as valid - it is not used to define the documentation versioning, which will instead be done via the `conf.py`.
+All dependencies are documentation dependencies, principally [Sphinx](https://www.sphinx-doc.org/). They are defined in the ``dependencies`` variable of the project TOML.
 
-The dependencies listed in the TOML are all related to documentation, and the principal dependency is Sphinx. There is no pinning required for the moment, but this may change dependending on the situation. There are no separate development or optional dependencies, as this is not a code repository, so all d
+[Astral UV](https://docs.astral.sh/uv/) is recommended package manager. This can be installed in different ways, but the simplest is via `pip`:
+```shell
+python -m pip install uv
+```
+By default UV installs and manages all dependencies in a new `.venv` subfolder in the working directory - if a pre-existing environment is preferred specify its path via the `UV_PROJECT_ENVIRONMENT` environment variable before running UV commands. To install (or sync) all the project dependencies via the project TOML run the following command:
+```shell
+uv sync --verbose --all-groups --all-extras --no-project-install --no-cache -refresh --inexact
+```
+This will usually update the `uv.lock` file: if so, the file should be staged and committed in the normal way.
 
-The recommended package manager is [Astral `uv`](https://docs.astral.sh/uv), but other tools may also be used if preferred.
+## Building and Viewing the Documentation Site Locally
 
-There is a hash-free `requirements.txt` which can be generated using:
+To build and view the entire site locally run the following command from the repository root:
 ```shell
-uv export -v --format requirements.txt --no-hashes -o requirements.txt
+make html
 ```
-This command takes the source list of dependencies from the dependencies defined in the TOML. The `--no-hashes` flag ensures that the file does not contain file hashes, which would otherwise prevent a `pip` installation. Another way of generating the `requirements.txt` is via `pip-compile` (from [`pip-tools`](https://pip-tools.readthedocs.io/en/latest/)):
-```shell
-pip-compile -o requirements.txt pyproject.toml
-```
-There is also a [`pylock.toml`](https://packaging.python.org/en/latest/specifications/pylock-toml/), with full dependency file hashes, which can be generated (with `uv`) using:
-```shell
-uv export -v --format pylock.toml -o pylock.toml
-```
-The `requirements.txt` and `pylock.toml` can be used individually to install all project dependencies, either using`uv` itself, for example:
-```shell
-uv pip install -r pylock.toml
-```
-or
-```shell
-uv pip install -r requirements.txt
-```
-or just the `requirements.txt` using `pip` as long as it does not contain hashes.
-
-## Documentation Sources & Assets
-
-TODO
+and open the `_build/html/index.html` page in a browser of your choice.
