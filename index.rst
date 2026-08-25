@@ -2,7 +2,7 @@
 ISARIC Clinical Epidemiology Platform Documentation
 ===================================================
 
-Welcome to the documentation site for the ISARIC clinical epidemiology platform. The core components are listed below, and can be explored in more detail via the links.
+Welcome to the documentation site for the |project|. The core components are listed below, and can be explored in more detail via the links.
 
 * Analysis and Research Compendium (ARC) - https://arc.docs.isaric.org
 * BioResearch Integrated Data Tool Generator (BRIDGE) - https://bridge.docs.isaric.org
