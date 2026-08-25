@@ -41,5 +41,6 @@ requires-python = ">=3.12"
 # No pinning required for the moment, but this could change.
 dependencies = [
     "Sphinx",
+    "myst-parser",
     "furo",
 ]
