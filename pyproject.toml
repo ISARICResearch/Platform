@@ -19,8 +19,7 @@ authors = [
     { name = "Sara Duque-Vallejo", email = "sara.duquevallejo@ndm.ox.ac.uk" },
     { name = "Abhishek Dasgupta", email = "abhishek.dasgupta@dtc.ox.ac.uk" },
     { name = "Alasdair Wilson", email = "alasdair.wilson@dtc.ox.ac.uk" },
-    { name = "Philippa Liggins", email = "philippa.liggins@dtc.ox.ac.uk" }
-    { name = "Laura Thomson", email = "laura.thomson@dtc.ox.ac.uk" },
+    { name = "Philippa Liggins", email = "philippa.liggins@dtc.ox.ac.uk" },
     { name = "Sandeep Murthy", email = "sandeep.murthy@ndm.ox.ac.uk" },
     { name = "ISARIC Development Team", email = "isaric-dev@ndm.ox.ac.uk" },
 ]
