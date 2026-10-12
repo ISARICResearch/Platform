@@ -65,6 +65,8 @@ extensions = [
     "myst_parser",
     "sphinx.ext.coverage",
     "sphinx.ext.todo",
+    "sphinx_design",
+    "sphinx_tippy",
 ]
 
 # Static template paths
@@ -195,7 +197,9 @@ html_logo = "_static/isaric-logo.png"
 
 # Relative path (from the ``docs`` folder) to the static files folder - so
 # ``_static`` should be one level below ``docs``.
-html_static_path = ["_static"]
+html_static_path = [
+    "_static",
+]
 
 # Custom CSS file(s)
 html_css_files = [
