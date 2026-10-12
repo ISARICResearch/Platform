@@ -23,7 +23,7 @@ github_repo = f"{github_url}/ISARICResearch/Platform"
 github_version = "main"
 # pypi_project = ''
 project = "ISARIC Clinical Epidemiology Platform"
-release = "v0.1.0"
+release = "v0.2.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -94,6 +94,9 @@ exclude_patterns = [
 todo_include_todos = True
 
 # -- Project file data variables ---------------------------------------------
+
+# Hack to not display the project title in the sidebar
+html_title = " "
 
 # HTML global context for templates
 html_context = {
