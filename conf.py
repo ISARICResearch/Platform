@@ -66,7 +66,6 @@ extensions = [
     "sphinx.ext.coverage",
     "sphinx.ext.todo",
     "sphinx_design",
-    "sphinx_tippy",
 ]
 
 # Static template paths
