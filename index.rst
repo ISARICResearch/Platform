@@ -1,10 +1,10 @@
-=====================================
-ISARIC Clinical Epidemiology Platform
-=====================================
+================================================
+ISARIC Clinical Epidemiology & Analysis Platform
+================================================
 
 This is the central documentation site for the |project|, which consists of four core projects: `ARC <https://arc.docs.isaric.org>`_, `BRIDGE <https://bridge.docs.isaric.org>`_, `VERTEX <https://vertex.docs.isaric.org>`_ and `ISARICAnalytics <https://analytics.docs.isaric.org>`_.
 
-Click on the panels to navigate to the projects of interest.
+Click on the panels to find out more.
 
 .. grid:: 2
    :gutter: 3
