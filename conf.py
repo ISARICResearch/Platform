@@ -17,12 +17,12 @@ from datetime import datetime
 author = "ISARIC"
 year = datetime.now().year
 copyright = f"ISARIC, {year}"
-description = "ISARIC Clinical Epidemiology Platform"
+description = "ISARIC Clinical Epidemiology & Analysis Platform"
 github_url = "https://github.com"
 github_repo = f"{github_url}/ISARICResearch/Platform"
 github_version = "main"
 # pypi_project = ''
-project = "ISARIC Clinical Epidemiology Platform"
+project = "ISARIC Clinical Epidemiology & Analysis Platform"
 release = "v0.2.0"
 
 # -- General configuration ---------------------------------------------------
@@ -218,4 +218,4 @@ html_show_sourcelink = True
 html_copy_source = True
 
 # Output file base name for HTML help builder - use the project name
-htmlhelp_basename = "ISARIC Clinical Epidemiology Platform"
+htmlhelp_basename = "ISARIC Clinical Epidemiology & Analysis Platform"

@@ -1,9 +1,9 @@
 [![CodeQL](https://github.com/ISARICResearch/Platform/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ISARICResearch/Platform/actions/workflows/github-code-scanning/codeql)
 [![Docs](https://app.readthedocs.org/projects/isaricplatform/badge/?version=latest)](https://app.readthedocs.org/projects/isaricplatform/builds/?version__slug=latest)
 
-# ISARIC Clinical Epidemiology Platform Documentation
+# ISARIC Clinical Epidemiology & Analysis Platform Documentation
 
-This is the repository for the ISARIC Clinical Epidemiology Platform documentation site:
+This is the central repository for the Platform documentation site:
 
 https://docs.isaric.org
 
